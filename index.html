@@ -1,0 +1,53 @@
+<!-- Descrição: Jogo da cobrinha em JavaScript e CSS com placar e armazenamento local
+     Autor: Eduardo Luparele
+     Data: 15/04/2025 -->
+     
+<!-- Este código HTML cria a estrutura básica de uma página da web para um jogo da cobrinha.
+     Ele inclui um título, uma lista de pontuações, um canvas para o jogo, um campo de entrada para o nome do jogador,
+     um botão para iniciar o jogo e instruções sobre os comandos e regras do jogo. -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Retrô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="high-scores-card">
+            <h3>Maiores Pontuações</h3>
+            <ol id="highScoresList">
+                <li><span class="trophy gold"></span> <span class="name"></span> - <span class="final-score"></span></li>
+                <li><span class="trophy silver"></span> <span class="name"></span> - <span class="final-score"></span></li>
+                <li><span class="trophy bronze"></span> <span class="name"></span> - <span class="final-score"></span></li>
+                <li><span class="trophy"></span> <span class="name"></span> - <span class="final-score"></span></li>
+                <li><span class="trophy"></span> <span class="name"></span> - <span class="final-score"></span></li>
+            </ol>
+        </div>
+        <canvas id="snake-canvas" width="400" height="400"></canvas>
+        <div class="info-card">
+            <h2>Snake Retrô</h2>
+            <p><b>Jogador:</b> <input type="text" id="playerName" placeholder="Digite seu nome"></p>
+            <button id="startGameBtn">Iniciar Jogo</button>
+            <p><b>Comandos:</b></p>
+            <ul>
+                <li><b>Seta Cima:</b> Mover para cima</li>
+                <li><b>Seta Baixo:</b> Mover para baixo</li>
+                <li><b>Seta Esquerda:</b> Mover para a esquerda</li>
+                <li><b>Seta Direita:</b> Mover para a direita</li>
+            </ul>
+            <p><b>Regras:</b></p>
+            <ul>
+                <li>Controle a serpente para comer a comida (quadrado vermelho).</li>
+                <li>Cada vez que a serpente come a comida, ela cresce e você ganha pontos.</li>
+                <li>Evite colidir com as paredes ou com o próprio corpo da serpente.</li>
+            </ul>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
