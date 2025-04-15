@@ -203,4 +203,3 @@ function startGame() { // Função que inicia o jogo
 displayHighScores();
 startGameBtn.addEventListener('click', startGame);
 document.addEventListener('keydown', changeDirection);
-/*******  16976bb3-9384-4a08-9b07-02f6e03f8800  *******/
