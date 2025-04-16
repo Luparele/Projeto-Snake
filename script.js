@@ -18,7 +18,7 @@ let velocityY = 0;
 let food = { x: 5, y: 5 };
 let score = 0;
 let gameInterval;
-const gameSpeed = 150;
+const gameSpeed = 250;
 let playerName = '';
 const highScoresKey = 'snakeHighScores';
 let gameStarted = false; // Flag para controlar se o jogo começou
